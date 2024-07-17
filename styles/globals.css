@@ -1,0 +1,26 @@
+body{
+    background-image: url(/image.png);
+    background-size: cover;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-container{
+        text-align: center;
+        border-radius: 50px;
+        border: 15px blue;
+        width: 55em;
+        padding: 2em;
+        background-color: rgba(58, 80, 153, 0.975);
+}
+.date-picker-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
