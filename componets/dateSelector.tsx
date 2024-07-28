@@ -7,6 +7,7 @@ type DateSelectorProps = {
 };
 
 export function DateSelector({ onSubmit }: DateSelectorProps) {
+  
   const [selectedDate, setSelectedDate] = React.useState(formatDate(new Date()));
 
   const handleSubmit = () => {
@@ -14,14 +15,17 @@ export function DateSelector({ onSubmit }: DateSelectorProps) {
   };
 
   return (
-    <div>
+    <div className='dateInput'>
       <input
         type="date"
-        id="dateInput"
         value={selectedDate}
+        max={formatDate(new Date())} //today's date
+        min={"1995-06-20"} //earilest possible date
+
+        className='datePicker'
         onChange={(e) => setSelectedDate(e.target.value)}
       />
-      <button onClick={handleSubmit}>Submit</button>
+      <button className ='button' onClick={handleSubmit}>Submit</button>
     </div>
   );
 }

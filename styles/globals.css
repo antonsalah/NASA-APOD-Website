@@ -7,20 +7,55 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
 }
 
 .box-container{
         text-align: center;
         border-radius: 50px;
-        border: 15px blue;
+        border: 5px 
+                solid 
+                #111;
         width: 55em;
         padding: 2em;
         background-color: rgba(58, 80, 153, 0.975);
 }
-.date-picker-container {
+.description{
+    font-size: 150%;
+    text-align: left;
+    font-family: 'Montserrat'
+}
+.dateInput{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 15px;
+}
+
+.button{
+    background-color: #BB5C11;
+    border: solid black 2px;
+    color: #222;
+    border-radius: 15px;
+    font-size: 25px;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.datePicker{
+    border: solid black 2px;
+    font-size: 15px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    
+}
+.datePicker:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.bold{
+    font-weight: bold;
 }

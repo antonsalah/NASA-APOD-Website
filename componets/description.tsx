@@ -2,7 +2,10 @@
 export default function Description({prop}: {prop : string}){
     return(
     <div>
-        <p>{prop}</p>
+        <p className="description">
+            <span className="bold">Explaination: </span>
+            {prop}
+        </p>
     </div>
     );
 }
