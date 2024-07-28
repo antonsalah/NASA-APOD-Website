@@ -15,9 +15,6 @@ export const getData = async (date: string): Promise<ApiResponseType> => {
         data = await res.json();
     } catch (err) {
         console.log(err);
-        //make error handeling for this
-        //return null;
-        
     }
     let result: ApiResponseType = {
         imgTitle : data.title,
