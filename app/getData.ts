@@ -1,5 +1,5 @@
+import { api_key } from "./api_key"
 
-// /app/getData
 export type ApiResponseType = {
 	imgTitle: string
 	imgUrl : string
@@ -8,7 +8,7 @@ export type ApiResponseType = {
 
 export const getData = async (date: string): Promise<ApiResponseType> => {
 
-    const url = `https://api.nasa.gov/planetary/apod?api_key=yBHawwWwFcjgSRgd1QbPAxrmfRYQfqrIeOkFyupn&date=${date}`;
+    const url = `https://api.nasa.gov/planetary/apod?api_key=${api_key}&date=${date}`;
     let data;
     try {
         let res = await fetch(url);

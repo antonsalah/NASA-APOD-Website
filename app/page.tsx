@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 import Description from "@/componets/description";
 import MainImg from "@/componets/mainImg";

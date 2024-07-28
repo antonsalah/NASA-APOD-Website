@@ -1,4 +1,3 @@
-// app/layout.tsx (for App Router)
 import '../styles/globals.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
